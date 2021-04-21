@@ -1,0 +1,10 @@
+<testsuite failures="0" name="src/test/java/restfulbooker/createToken.feature" skipped="0" tests="1" time="1.476844">
+  <testcase classname="src.test.java.restfulbooker.createToken" name="Verificar que al enviar todos los parametros correctos reciba codigo 200" time="1.476844">
+    <system-out>* url baseURL ............................................................. passed
+* header Content-Type = 'application/json' ................................ passed
+Given path '/auth' ........................................................ passed
+And request ............................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

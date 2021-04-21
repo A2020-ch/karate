@@ -1,0 +1,96 @@
+12:29:55.711[main] ERROR com.intuit.karate - javascript function call failed: TypeError: karate.configura is not a function
+12:29:55.711[main] ERROR com.intuit.karate - failed function body: function(){
+	karate.configure('connectTimeout',60000);
+	karate.configura('readTimeout',60000);
+	karate.configure('logPrettyResponde',true);
+
+	var config={
+	baseURL:'https://restful-booker.herokuapp.com'}
+
+	return config;
+}
+12:29:55.711[main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript function call failed: TypeError: karate.configura is not a function
+12:31:49.447[main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+12:31:49.619[ForkJoinPool-1-worker-1] ERROR com.intuit.karate - javascript function call failed: TypeError: karate.configura is not a function
+12:31:49.619[ForkJoinPool-1-worker-1] ERROR com.intuit.karate - failed function body: function(){
+	karate.configure('connectTimeout',60000);
+	karate.configura('readTimeout',60000);
+	karate.configure('logPrettyResponde',true);
+
+	var config={
+	baseURL:'https://restful-booker.herokuapp.com'}
+
+	return config;
+}
+12:31:49.619[ForkJoinPool-1-worker-1] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript function call failed: TypeError: karate.configura is not a function
+12:31:49.801[pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/restfulbooker/createToken.feature
+12:33:26.477[main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+12:33:26.643[ForkJoinPool-1-worker-1] ERROR com.intuit.karate - javascript function call failed: unexpected 'configure' key: 'logPrettyResponde'
+12:33:26.643[ForkJoinPool-1-worker-1] ERROR com.intuit.karate - failed function body: function(){
+	karate.configure('connectTimeout',60000);
+	karate.configure('readTimeout',60000);
+	karate.configure('logPrettyResponde',true);
+
+	var config={
+	baseURL:'https://restful-booker.herokuapp.com'}
+
+	return config;
+}
+12:33:26.643[ForkJoinPool-1-worker-1] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript function call failed: unexpected 'configure' key: 'logPrettyResponde'
+12:33:26.827[pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/restfulbooker/createToken.feature
+12:34:32.613[main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+12:34:33.014[pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/restfulbooker/createToken.feature
+12:36:05.891[main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+12:36:06.351[pool-1-thread-1] INFO  com.intuit.karate.Runner - <<fail>> feature 1 of 1: src/test/java/restfulbooker/createToken.feature
+13:02:27.555[main] INFO  com.intuit.karate.Runner - waiting for parallel features to complete ...
+13:02:28.518[ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST https://restful-booker.herokuapp.com/auth
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 45
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: restful-booker.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_281)
+{"username":"admin","password":"password123"}
+
+13:02:29.266[ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 739.03
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 27
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 21 Apr 2021 18:02:30 GMT
+1 < Etag: W/"1b-CNFIJ95Mna4SG3Zu16wHGhgkeGI"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{
+  "token": "5de8f93e116f869"
+}
+
+
+13:02:29.335[pool-1-thread-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: src/test/java/restfulbooker/createToken.feature
+13:03:23.613[main] DEBUG com.intuit.karate - request:
+1 > POST https://restful-booker.herokuapp.com/auth
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 45
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: restful-booker.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_281)
+{"username":"admin","password":"password123"}
+
+13:03:24.283[main] DEBUG com.intuit.karate - response time in milliseconds: 672.45
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 27
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 21 Apr 2021 18:03:25 GMT
+1 < Etag: W/"1b-j/krr568z07cYIUqMFCjEt/ITFA"
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+{
+  "token": "ab72b56827ca6bc"
+}
+
+
